@@ -9,7 +9,7 @@ import { GrBlog } from 'react-icons/gr'
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
-        <div className='flex justify-between items-center lg:mt-5 mt-2'>
+        <div className='flex justify-between items-center lg:mt-5 mt-2 z-30'>
             <div>
                 <img className='md:w-40 md:h-16 w-20 h-8 ' src={logo} alt="logo" />
             </div>
@@ -25,14 +25,16 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* **** this div will only visible in small device ***  */}
-            <div className={menuOpen === false ? `md:hidden block duration-300 absolute translate-y-[250px] bottom-0 w-11/12` : `md:hidden block absolute translate-y-[0px] duration-300  bottom-0 w-11/12`}>
-                <ul className='grid gap-3 grid-cols-3 text-center bg-white w-full pt-5 pb-10 px-8 rounded-t-lg'>
-                    <li className='text-2xl border border-gray-700 hover:bg-gray-200 rounded-md p-2 flex justify-center items-center'><AiOutlineHome /></li>
-                    <li className='text-2xl border border-gray-700 hover:bg-gray-200 rounded-md p-2 flex justify-center items-center'><AiOutlineUser /></li>
-                    <li className='text-2xl border border-gray-700 hover:bg-gray-200 rounded-md p-2 flex justify-center items-center'><BsBriefcase /></li>
-                    <li className='text-2xl border border-gray-700 hover:bg-gray-200 rounded-md p-2 flex justify-center items-center'><GiSkills /></li>
-                    <li className='text-2xl border border-gray-700 hover:bg-gray-200 rounded-md p-2 flex justify-center items-center'><GrBlog /></li>
-                    <li className='text-2xl border border-gray-700 hover:bg-gray-200 rounded-md p-2 flex justify-center items-center'><AiOutlineContacts /></li>
+            {/* <div className={menuOpen === false ? `md:hidden block duration-300 left-[72px] absolute w-11/12` : `md:hidden block absolute duration-300 w-11/12`}> */}
+            <div className={`md:hidden block duration-300 shadow-2xl shadow-amber-300 ${!menuOpen ? "top-[-150px]":"top-[40px]"} absolute w-11/12`}>
+
+                <ul className='grid gap-1 grid-cols-3 text-center bg-white p-2 rounded-xl'>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineHome />Home</li>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineUser />About</li>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><BsBriefcase />Projects</li>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GiSkills />Skills</li>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GrBlog />Blogs</li>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineContacts />Contact</li>
                 </ul>
             </div>
 
