@@ -9,7 +9,7 @@ import { GrBlog } from 'react-icons/gr'
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
-        <div className='flex justify-between items-center md:pt-5 pb-1 pt-3 z-30  ' style={{background: "#EBEBEB"}}>
+        <div className='flex justify-between items-center md:pt-5 pb-1 pt-3 z-30 sticky top-0 ' style={{background: "#EBEBEB"}}>
             <div>
                 <img className='md:w-40 md:h-16 w-20 h-8 ' src={logo} alt="logo" />
             </div>
