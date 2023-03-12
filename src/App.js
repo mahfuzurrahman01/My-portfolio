@@ -5,6 +5,8 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Navbar from "./Shared/Navbar/Navbar";
 import { motion } from "framer-motion"
 import Screen from "./Shared/AnimatedScreen/Screen";
+import Skills from "./Components/Skills/Skills";
+import About from "./Components/About/About";
 
 const spinner = <CirclesWithBar
   height="110"
@@ -33,7 +35,7 @@ function App() {
   console.log(loading)
 
   return (
-    <div>
+    <div id='home'>
       <div className="lg:w-4/5 w-11/12 m-auto ">
         {
           loading && intro && <motion.div className="min-h-screen flex justify-center items-center"
@@ -53,7 +55,9 @@ function App() {
           >
             <Navbar />
             <Hero />
+            <About />
             <Portfolio />
+            <Skills />
           </motion.div>
         }
 

@@ -9,18 +9,18 @@ import { GrBlog } from 'react-icons/gr'
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
-        <div className='flex justify-between items-center md:pt-5 pb-1 pt-3 z-30 sticky top-0 ' style={{background: "#EBEBEB"}}>
+        <div   className='flex justify-between items-center md:pt-5 pb-1 pt-3 z-30 sticky top-0 ' style={{background: "#EBEBEB"}}>
             <div>
                 <img className='md:w-40 md:h-16 w-20 h-8 ' src={logo} alt="logo" />
             </div>
             {/* **** this div will only visible in large and medium device ***  */}
             <div className='md:block hidden'>
                 <ul className='flex gap-5 text-lg font-light uppercase'>
-                    <li className='hover:font-normal cursor-pointer text-gray-900'>Home</li>
-                    <li className='hover:font-normal cursor-pointer text-gray-900'>About Me</li>
-                    <a href="#portfolio" className='hover:font-normal cursor-pointer text-gray-900'>Portfolio</a>
-                    <li className='hover:font-normal cursor-pointer text-gray-900'>Skills</li>
-                    <li className='hover:font-normal cursor-pointer text-gray-900'>Blog</li>
+                    <a href='#home' className='hover:font-normal cursor-pointer text-gray-900'>Home</a>
+                    <a href='#about' className='hover:font-normal cursor-pointer text-gray-900'>About Me</a>
+                    <a href="#portfolio" className='hover:font-normal cursor-pointer text-gray-900'>Projects</a>
+                    <a href="#skills" className='hover:font-normal cursor-pointer text-gray-900'>Skills</a>
+                    <li className='hover:font-normal cursor-pointer text-gray-900'>Testimonial's</li>
                     <li className='hover:font-normal cursor-pointer text-gray-900'>Contact</li>
                 </ul>
             </div>
@@ -29,11 +29,11 @@ const Navbar = () => {
             <div className={`md:hidden block duration-300 shadow-2xl shadow-amber-300 ${!menuOpen ? "top-[-150px]":"top-[50px]"} absolute w-11/12`}>
 
                 <ul className='grid gap-1 grid-cols-3 text-center bg-white p-2 rounded-xl'>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineHome />Home</li>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineUser />About</li>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><BsBriefcase />Projects</li>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GiSkills />Skills</li>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GrBlog />Blogs</li>
+                    <a href='#home' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineHome />Home</a>
+                    <a href='#about' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><SiAboutdotme />About me</a>
+                    <a href='#portfolio' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><BsBriefcase />Portfolio</a>
+                    <a href='#skills' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GiSkills />Skills</a>
+                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GrBlog />Testimonial's</li>
                     <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineContacts />Contact</li>
                 </ul>
             </div>
@@ -50,3 +50,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
