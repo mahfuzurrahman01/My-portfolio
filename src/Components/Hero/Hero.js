@@ -23,7 +23,7 @@ const Hero = () => {
                         transition={{ delay: 1.7, duration: 0.7 }}>
                         I love to build the web app.
                     </motion.h1>
-                    <div className='border p-2 lg:mt-5 mt-2  rounded-xl text-justify bg-gray-200  hover:bg-rose-200 hover:bg-gradient-to-tl hover:from-yellow-200 duration-500 cursor-pointer'>
+                    <div className='border p-2 lg:mt-5 mt-2  rounded-xl text-justify bg-gray-200 cursor-pointer'>
                         <p>As a frontend developer, I am dedicated to crafting beautiful, functional, and intuitive user interfaces that engage and delight users.My approach to development is collaborative and user-centered, ensuring that the end result meets your needs and satisfies your users. I am constantly expanding my knowledge and skills to stay up-to-date with the latest trends and best practices in the industry.</p>
                         <p className='border p-2 lg:mt-5 mt-2  rounded-xl text-justify bg-gray-200  hover:bg-gray-200 duration-300 cursor-pointer'>By the way I love to build the frontend with ReactJs. And the combination of react and tailwind CSS is always satisfying for me!!</p>
                     </div>

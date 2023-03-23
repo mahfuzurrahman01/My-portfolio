@@ -7,6 +7,11 @@ import phLogo from '../../Assets/Logo/ph.png'
 import calcitelogo from '../../Assets/Logo/calcitex.png'
 import zeigenLogo from '../../Assets/Logo/zeigen-logo.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const About = () => {
     const [state, setState] = useState(false)
     return (
@@ -20,7 +25,7 @@ const About = () => {
             </div>
 
             {
-                !state && <section className=" text-gray-700 md:mt-5 mt-2">
+                !state && <section data-aos="zoom-in" data-aos-duration="1500" className="text-gray-700 md:mt-5 mt-2">
                     <div className="container max-w-5xl px-4 py-12 mx-auto">
                         <div className="grid gap-4 mx-4 sm:grid-cols-12">
                             <div className="col-span-12 sm:col-span-3">
@@ -69,7 +74,7 @@ const About = () => {
             {/*====================== this section is for experience ========================= */}
 
             {
-                state && <section className=" text-gray-700 md:mt-5 mt-2">
+                state && <section className=" text-gray-700 md:mt-5 mt-2" data-aos="zoom-in" data-aos-duration="1500">
                     <div className="container max-w-5xl px-4 py-12 mx-auto">
                         <div className="grid gap-4 mx-4 sm:grid-cols-12">
                             <div className="col-span-12 sm:col-span-3">
