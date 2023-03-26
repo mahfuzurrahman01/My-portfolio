@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { motion } from "framer-motion";
+import ProjectCard from './ProjectCard/ProjectCard';
 
 const Details = () => {
     const projects = useLoaderData()
@@ -13,15 +14,25 @@ const Details = () => {
     }, [])
 
     const project = allProjects.find(x => x.id === id)
-    console.log(project)
+
+
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className='flex justify-center items-center gap-5 w-11/12 mx-auto min-h-screen'
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className='w-11/12 mx-auto min-h-screen'
         >
-            <h1 className='text-5xl font-bold text-gray-500 text-center'>{project?.title}</h1>
+            <div className='w-11/12 mx-auto'>
+                <h1 className='lg:text-6xl md:text-5xl text-3xl pt-5 font-bold text-gray-500 border-b-4 md:pb-5 pb-2 w-1/2 mx-auto border-gray-400 text-center'>{project?.title}</h1>
+                <p className='mt-5 lg:text-lg md:text-lg text-xs text-gray-500 font-serif text-center w-11/12 mx-auto'>{project?.description}</p>
+            </div>
+            {
+                project?.projects?.length > 0 && <div
+                    className='lg:w-[90%] w-[95%] mx-auto'>
+                    <ProjectCard projects={project.projects} />
+                </div>
+            }
         </motion.div>
     );
 };

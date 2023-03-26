@@ -1,0 +1,12 @@
+.image-scroll {
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+    background-position-x: 0;
+    background-repeat: no-repeat;
+    transition: all 3s ease;
+}
+
+.image-scroll:hover {
+    background-position-y: 100%;
+}
