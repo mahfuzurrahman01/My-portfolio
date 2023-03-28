@@ -21,8 +21,8 @@ const Navbar = () => {
                     <li><a href='#about' className='hover:font-normal cursor-pointer text-gray-900'>About Me</a></li>
                     <li> <a href="#portfolio" className='hover:font-normal cursor-pointer text-gray-900'>Projects</a></li>
                     <li><a href="#skills" className='hover:font-normal cursor-pointer text-gray-900'>Skills</a></li>
-                    <li><a href='# ' className='hover:font-normal cursor-pointer text-gray-900'>Testimonial's</a></li>
-                    <li> <a href='# ' className='hover:font-normal cursor-pointer text-gray-900'>Contact</a></li>
+                    {/* <li><a href='# ' className='hover:font-normal cursor-pointer text-gray-900'>Testimonial's</a></li> */}
+                    <li> <a href='#contact' className='hover:font-normal cursor-pointer text-gray-900'>Contact</a></li>
                 </ul>
             </div>
             {/* **** this div will only visible in small device ***  */}
@@ -34,8 +34,8 @@ const Navbar = () => {
                     <a href='#about' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><SiAboutdotme />About me</a>
                     <a href='#portfolio' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><BsBriefcase />Portfolio</a>
                     <a href='#skills' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GiSkills />Skills</a>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GrBlog />Testimonial's</li>
-                    <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineContacts />Contact</li>
+                    {/* <li className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><GrBlog />Testimonial's</li> */}
+                    <a href='#contact' className='text-xs font-semibold gap-1 border border-gray-700 hover:bg-gray-200 rounded-md p-1 flex justify-center items-center'><AiOutlineContacts />Contact</a>
                 </ul>
             </div>
 

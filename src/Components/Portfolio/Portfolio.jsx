@@ -1,5 +1,5 @@
 import Title from '../../Shared/Title';
-import {  CiGlobe, CiMonitor, CiViewTimeline } from 'react-icons/ci'
+import { CiGlobe, CiMonitor, CiViewTimeline } from 'react-icons/ci'
 import { useEffect, useState } from 'react';
 import bg2 from '../../Assets/background/bg2.jpg'
 import bg3 from '../../Assets/background/bg3.jpg'
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 const Portfolio = () => {
-    const [projects,setProjects] = useState([])
+    const [projects, setProjects] = useState([])
     // this state will define the cover of categories items on portfolio section when hover this state will change and with this change the cover will seen or hidden
     const [cover, setCover] = useState(0)
 
@@ -39,27 +39,13 @@ const Portfolio = () => {
             <Title name={"Projects"} />
             <div className='flex justify-center items-center gap-6 flex-wrap'>
 
-                {/* ==========================================================
-                =========================== Frontend section =================
-                ============================================================== */}
-                <div data-aos="zoom-in-right" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(1)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
-                    {/* This div will work as cover  */}
-                    <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 1 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg4})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
-                        <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
-                            <p>"Step inside the world of e-commerce! Here, you'll find a collection of my favorite projects that showcase the power of online shopping. Take a peek and see what's possible!"</p>
-                            <Link to='/projectsDetails/1'><PrimaryButton name="Explore" /></Link>
-                        </div>
-                    </div>
-                    <CiMonitor className='w-16 h-16 text-slate-200' />
-                    <p className='text-4xl font-light uppercase text-white p-5'>FRONTEND </p>
-                </div>
 
                 {/* ==========================================================
                 =========================== Full stack section =================
                 ============================================================== */}
 
                 <div data-aos="zoom-in" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(2)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
-          
+
                     <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 2 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg2})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
                         <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
                             <p>"In this section, you'll find my favorite projects that showcase my experience related to Business website. Come take a look and see how I can help bring your business to the next level!"</p>
@@ -71,15 +57,34 @@ const Portfolio = () => {
                 </div>
 
                 {/* ==========================================================
+                =========================== Frontend section =================
+                ============================================================== */}
+                <div data-aos="zoom-in-right" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(1)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
+                    {/* This div will work as cover  */}
+                    <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 1 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg4})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
+                        <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
+                            <p>"Step inside the world of e-commerce! Here, you'll find a collection of my favorite projects that showcase the power of online shopping. Take a peek and see what's possible!"</p>
+                            {/* <Link to='/projectsDetails/3'><PrimaryButton name="Explore" /></Link> */}
+                            <PrimaryButton name="Projects are ongoing" />
+                        </div>
+                    </div>
+                    <CiMonitor className='w-16 h-16 text-slate-200' />
+                    <p className='text-4xl font-light uppercase text-white p-5'>FRONTEND </p>
+                </div>
+
+
+
+                {/* ==========================================================
                 =========================== Real life section =================
                 ============================================================== */}
 
                 <div data-aos="zoom-in-left" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(3)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
-          
+
                     <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 3 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg3})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
                         <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
                             <p>"Explore the art of storytelling with my blogging projects! In this section, you'll find a selection of my recent blogging website that I have build with reactJs Come discover the power of words!"</p>
-                            <Link to='/projectsDetails/3'><PrimaryButton name="Explore" /></Link>
+                            {/* <Link to='/projectsDetails/3'><PrimaryButton name="Explore" /></Link> */}
+                            <PrimaryButton name="Projects are ongoing" />
                         </div>
                     </div>
                     <CiViewTimeline className='w-16 h-16 text-slate-200' />

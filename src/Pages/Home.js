@@ -8,6 +8,8 @@ import Hero from '../Components/Hero/Hero';
 import About from '../Components/About/About';
 import Portfolio from '../Components/Portfolio/Portfolio';
 import Skills from '../Components/Skills/Skills';
+import Testimonials from '../Components/testimonials/Testimonials';
+import Contact from '../Components/Contact/Contact';
 
 const spinner = <CirclesWithBar
     height="110"
@@ -68,6 +70,7 @@ const Home = () => {
                         <About />
                         <Portfolio />
                         <Skills />
+                        <Contact/>
                     </motion.div>
                 }
 
