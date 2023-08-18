@@ -60,7 +60,7 @@ const Contact = () => {
                                 <a href='https://www.facebook.com/abir.hossin.313/' target="_blank" rel='noreferrer'><BsFacebook className='w-full h-full ' /></a>
                             </div>
                             <div className='bg-gray-50 p-2 w-14 h-12 rounded-lg hover:duration-500 hover:bg-gray-600 hover:text-gray-50 hover:scale-110'>
-                                <a href="https://www.linkedin.com/in/mafuzur-rahman-873194286/
+                                <a href="https://www.linkedin.com/in/mafuzurrahman01/
                                   " target='_blank' rel='noreferrer'>
                                     <BsLinkedin className='w-full h-full ' />
                                 </a>
