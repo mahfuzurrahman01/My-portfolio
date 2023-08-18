@@ -26,8 +26,8 @@ const About = () => {
 
             {
                 !state && <section data-aos="zoom-in" data-aos-duration="1500" className="text-gray-700 md:mt-5 mt-2">
-                    <div className="container max-w-5xl px-4 py-12 mx-auto">
-                        <div className="grid gap-4 mx-4 sm:grid-cols-12">
+                    <div className="lg:px-5 px-2 py-12 mx-auto w-[90%]">
+                        <div className="grid gap-4 lg:mx-4 mx-1 sm:grid-cols-12">
                             <div className="col-span-12 sm:col-span-3">
                                 <div className="text-center sm:text-left md:mb-14 mb-7 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-slate-500">
                                     <h3 className="text-3xl font-semibold">Certificates</h3>
@@ -75,8 +75,8 @@ const About = () => {
 
             {
                 state && <section className=" text-gray-700 md:mt-5 mt-2" data-aos="zoom-in" data-aos-duration="1500">
-                    <div className="container max-w-5xl px-4 py-12 mx-auto">
-                        <div className="grid gap-4 mx-4 sm:grid-cols-12">
+                    <div className="lg:px-5 px-2 py-12 mx-auto w-[90%]">
+                        <div className="grid gap-4 lg:mx-4 mx-1 sm:grid-cols-12">
                             <div className="col-span-12 sm:col-span-3">
                                 <div className="text-center sm:text-left md:mb-14 mb-7 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-slate-500">
                                     <h3 className="text-3xl font-semibold">Experiences</h3>

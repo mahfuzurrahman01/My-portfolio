@@ -6,7 +6,17 @@
     background-repeat: no-repeat;
     transition: all 3s ease;
 }
-
+.image-scroll-banner {
+    width: 100%;
+    height: 200px;
+    background-size: 100%;
+    background-position-x: 0;
+    background-repeat: no-repeat;
+    transition: all 3s ease;
+}
+.image-scroll-banner:hover{
+    background-position-y: 100%;
+}
 .image-scroll:hover {
     background-position-y: 100%;
 }

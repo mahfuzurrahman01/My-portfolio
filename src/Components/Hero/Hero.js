@@ -28,7 +28,7 @@ const Hero = () => {
                         <p className='border p-2 lg:mt-5 mt-2  rounded-xl text-justify bg-gray-200  hover:bg-gray-200 duration-300 cursor-pointer'>By the way I love to build the frontend with ReactJs. And the combination of react and tailwind CSS is always satisfying for me!!</p>
                     </div>
                     <div className='inline-block'>
-                        <p className='flex justify-center items-center gap-1 border border-gray-400 text-gray-700 px-5 ml-2 cursor-pointer hover:bg-gray-400 hover:text-white duration-300 mt-3 py-2 rounded-lg hover:shadow-lg  mb-1'>Hire me <IoPaperPlaneOutline /></p>
+                        <a href='#contact' className='flex justify-center items-center gap-1 border border-gray-400 text-gray-700 px-5 ml-2 cursor-pointer hover:bg-gray-400 hover:text-white duration-300 mt-3 py-2 rounded-lg hover:shadow-lg  mb-1'>Hire me <IoPaperPlaneOutline /></a>
                     </div>
 
                 </div>

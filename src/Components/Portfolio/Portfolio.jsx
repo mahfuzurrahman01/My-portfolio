@@ -64,8 +64,8 @@ const Portfolio = () => {
                     <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 1 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg4})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
                         <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
                             <p>"Step inside the world of e-commerce! Here, you'll find a collection of my favorite projects that showcase the power of online shopping. Take a peek and see what's possible!"</p>
-                            {/* <Link to='/projectsDetails/3'><PrimaryButton name="Explore" /></Link> */}
-                            <PrimaryButton name="Projects are ongoing" />
+                            <Link to='/projectsDetails/1'><PrimaryButton name="Explore" /></Link>
+                      
                         </div>
                     </div>
                     <CiMonitor className='w-16 h-16 text-slate-200' />

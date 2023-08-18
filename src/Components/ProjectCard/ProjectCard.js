@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { motion } from "framer-motion";
 import { BsGithub } from 'react-icons/bs';
@@ -24,7 +25,7 @@ const ProjectCard = ({ projects }) => {
                                 <span className="text-xs text-gray-400">{project?.date}</span>
                             </div>
                         </div>
-                        <div className='w-full h-72 image-scroll rounded' style={{ backgroundImage: `url(${project?.image})` }}>
+                        <div className={`${project?.size === "banner" ? "w-full image-scroll-banner rounded": "w-full image-scroll rounded"}`} style={{ backgroundImage: `url(${project?.image})` }}>
 
                         </div>
                     </div>
@@ -36,10 +37,12 @@ const ProjectCard = ({ projects }) => {
                                 <BsGithub className='text-2xl text-center' />
                                 <p className='text-sm font-semibold'>Frontend</p>
                             </a>
-                            <a rel="noreferrer" target="_blank" href={project?.gitHubServer} className='flex flex-col justify-center items-center '>
-                                <TbBrandGithub className='text-2xl text-center' />
-                                <p className='text-sm font-semibold'>Backend</p>
-                            </a>
+                            {
+                                project?.gitHubServer && <a rel="noreferrer" target="_blank" href={project?.gitHubServer} className='flex flex-col justify-center items-center '>
+                                    <TbBrandGithub className='text-2xl text-center' />
+                                    <p className='text-sm font-semibold'>Backend</p>
+                                </a>
+                            }
 
                             <a rel="noreferrer" target="_blank" href={project?.live} className='flex flex-col justify-center items-center '>
                                 <AiOutlineLink className='text-2xl text-center' />
