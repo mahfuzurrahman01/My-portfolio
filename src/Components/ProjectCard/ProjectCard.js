@@ -25,12 +25,12 @@ const ProjectCard = ({ projects }) => {
                                 <span className="text-xs text-gray-400">{project?.date}</span>
                             </div>
                         </div>
-                        <div className={`${project?.size === "banner" ? "w-full image-scroll-banner rounded": "w-full image-scroll rounded"}`} style={{ backgroundImage: `url(${project?.image})` }}>
+                        <div className={`${project?.size === "banner" ? "w-full lg:mt-0 mt-2 image-scroll-banner rounded": "w-full image-scroll rounded"}`} style={{ backgroundImage: `url(${project?.image})` }}>
 
                         </div>
                     </div>
-                    <div className='text-lg  text-gray-700 lg:w-[60%] w-full lg:mb-0 mb-5'>
-                        <p className='md:text-5xl text-3xl p-2 font-bold text-gray-600  md:mb-5 mb-1 inline-block'>{project?.name}</p>
+                    <div className='text-lg text-gray-700 lg:w-[60%] w-full lg:mb-0 mb-5'>
+                        <p className='md:text-5xl text-3xl lg:mt-7 mt-0 p-2 font-bold text-gray-600  md:mb-5 mb-1 inline-block'>{project?.name}</p>
                         <p className='text-justify p-2 md:text-lg text-sm'>{project?.description}</p>
                         <div className='my-5 flex lg:justify-start justify-center gap-5 items-center'>
                             <a href={project?.gitHubClient} rel="noreferrer" target="_blank" className='flex flex-col justify-center items-center '>
