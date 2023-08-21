@@ -50,23 +50,23 @@ const Contact = () => {
     return (
         <div className='mt-5 pb-10' id="contact">
             <Title name={'Contact'} />
-            <section data-aos="zoom-in" data-aos-duration="700" className="py-6 bg-gray-100 text-gray-600 rounded-lg">
+            <section className="py-6 bg-gray-100 text-gray-600 rounded-lg">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                     <div className="py-6 md:py-0 md:px-6">
                         <h1 className="text-lg pb-1 border-b-2 w-4/6" >Social media</h1>
                         <div className='flex my-5 items-center gap-5 flex-wrap'>
-                            <div className='bg-gray-50 p-2 w-14 h-12 rounded-lg hover:duration-500 hover:bg-gray-600 hover:text-gray-50 hover:scale-110'><a href='https://github.com/mahfuzurrahman01' target="_blank" rel='noreferrer'><BsGithub className='w-full h-full ' /></a></div>
+                            <div className='bg-gray-50 p-2 w-14 h-12 rounded-lg hover:duration-500 hover:bg-gray-600 hover:text-gray-50 hover:scale-110'><a data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" href='https://github.com/mahfuzurrahman01' target="_blank" rel='noreferrer'><BsGithub className='w-full h-full ' /></a></div>
                             <div className='bg-gray-50 p-2 w-14 h-12 rounded-lg hover:duration-500 hover:bg-gray-600 hover:text-gray-50 hover:scale-110'>
-                                <a href='https://www.facebook.com/abir.hossin.313/' target="_blank" rel='noreferrer'><BsFacebook className='w-full h-full ' /></a>
+                                <a data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" href='https://www.facebook.com/abir.hossin.313/' target="_blank" rel='noreferrer'><BsFacebook className='w-full h-full ' /></a>
                             </div>
                             <div className='bg-gray-50 p-2 w-14 h-12 rounded-lg hover:duration-500 hover:bg-gray-600 hover:text-gray-50 hover:scale-110'>
-                                <a href="https://www.linkedin.com/in/mafuzurrahman01/
+                                <a data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000" href="https://www.linkedin.com/in/mafuzurrahman01/
                                   " target='_blank' rel='noreferrer'>
                                     <BsLinkedin className='w-full h-full ' />
                                 </a>
                             </div>
                             <div className='bg-gray-50 p-2 w-14 h-12 rounded-lg hover:duration-500 hover:bg-gray-600 hover:text-gray-50 hover:scale-110'>
-                                <a target="_blank" rel="noreferrer" href="https://dev.to/mahfuzurrahman01"><FaDev className='w-full h-full ' /></a>
+                                <a data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1000" target="_blank" rel="noreferrer" href="https://dev.to/mahfuzurrahman01"><FaDev className='w-full h-full ' /></a>
                             </div>
                         </div>
                         <h1 className="text-lg pb-1 border-b-2 w-4/6" >Address details</h1>

@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 const Portfolio = () => {
-    const [projects, setProjects] = useState([])
+    
     // this state will define the cover of categories items on portfolio section when hover this state will change and with this change the cover will seen or hidden
     const [cover, setCover] = useState(0)
 
@@ -44,7 +44,7 @@ const Portfolio = () => {
                 =========================== Full stack section =================
                 ============================================================== */}
 
-                <div data-aos="zoom-in" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(2)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
+                <div  onMouseEnter={() => mouseEnterHandle(2)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
 
                     <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 2 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg2})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
                         <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 {/* ==========================================================
                 =========================== Frontend section =================
                 ============================================================== */}
-                <div data-aos="zoom-in-right" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(1)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
+                <div  onMouseEnter={() => mouseEnterHandle(1)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
                     {/* This div will work as cover  */}
                     <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 1 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg4})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
                         <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>
@@ -78,7 +78,7 @@ const Portfolio = () => {
                 =========================== Real life section =================
                 ============================================================== */}
 
-                <div data-aos="zoom-in-left" data-aos-duration="1000" onMouseEnter={() => mouseEnterHandle(3)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
+                <div onMouseEnter={() => mouseEnterHandle(3)} onMouseLeave={mouseLeaveHandle} className='lg:w-[32%] w-full flex-col relative overflow-hidden bg-gray-600 bg-gradient-to-tl from-slate-300 rounded-lg flex justify-center items-center h-72'>
 
                     <div className={`absolute  bg-gradient-to-tl from-yellow-300 p-5 flex justify-center items-center duration-500 w-full h-72 ${cover === 3 ? "top-0" : "top-[-100%]"}`} style={{ backgroundImage: `url(${bg3})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat' }}>
                         <div className='bg-gray-400 text-white p-2 bg-opacity-60 rounded-lg text-lg text-center'>

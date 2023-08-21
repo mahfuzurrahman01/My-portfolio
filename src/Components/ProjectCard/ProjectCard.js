@@ -15,8 +15,9 @@ const ProjectCard = ({ projects }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.8 }}
             className='flex flex-col justify-center items-center mt-7 w-full bg-gray-100 md:p-10 p-2 rounded-lg'>
+               
             {
-                projects?.map(project => <div key={project.id} className={`flex ${project.id / 1 === 1 ? 'lg:flex-row flex-col' : 'lg:flex-row-reverse flex-col'} justify-center items-center md:gap-10 gap-10 w-full`}>
+                projects?.map(project => <div key={project.id} className={`flex ${project.id % 2 === 0 ? 'lg:flex-row flex-col' : 'lg:flex-row-reverse flex-col'} justify-center items-center md:gap-10 gap-10 w-full`}>
                     <div className="flex flex-col lg:w-[40%] w-full md:p-6 p-3 md:space-y-6 space-y-1 overflow-hidden rounded-lg shadow-md bg-gray-900 bg-gradient-to-tl from-gray-600 text-gray-100">
                         <div className="flex space-x-4">
                             <img alt="" src={project?.logo} className="object-cover w-12 h-12 rounded-full shadow bg-gray-500" />
@@ -30,7 +31,7 @@ const ProjectCard = ({ projects }) => {
                         </div>
                     </div>
                     <div className='text-lg text-gray-700 lg:w-[60%] w-full lg:mb-0 mb-5'>
-                        <p className='md:text-5xl text-3xl lg:mt-7 mt-0 p-2 font-bold text-gray-600  md:mb-5 mb-1 inline-block'>{project?.name}</p>
+                        <p className='md:text-4xl uppercase text-3xl lg:mt-7 mt-0 p-2 font-bold text-gray-600  md:mb-5 mb-1 inline-block'>{project?.name}</p>
                         <p className='text-justify p-2 md:text-lg text-sm'>{project?.description}</p>
                         <div className='my-5 flex lg:justify-start justify-center gap-5 items-center'>
                             <a href={project?.gitHubClient} rel="noreferrer" target="_blank" className='flex flex-col justify-center items-center '>

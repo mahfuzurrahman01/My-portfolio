@@ -10,6 +10,7 @@ import Portfolio from '../Components/Portfolio/Portfolio';
 import Skills from '../Components/Skills/Skills';
 import Testimonials from '../Components/testimonials/Testimonials';
 import Contact from '../Components/Contact/Contact';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 const spinner = <CirclesWithBar
     height="110"
@@ -48,7 +49,7 @@ const Home = () => {
 
     return (
         <div id='home'>
-            <div className="lg:w-4/5 w-11/12 m-auto ">
+            <div className="lg:w-4/5 w-11/12 m-auto">
                 {
                     loading && localStorageItem !== "true" && <motion.div className="min-h-screen flex justify-center items-center"
                         initial={{ opacity: 0, scale: 0.5 }}
@@ -61,10 +62,12 @@ const Home = () => {
                 {
                     !loading &&
                     <motion.div
+                    className='relative'
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.6 }}
                     >
+                        {/* <a href='#home' className='lg:bottom-10 bottom-7 fixed lg:right-10 right-6 bg-gray-600 w-7 h-7 rounded-full flex justify-center items-center text-gray-100'><AiOutlineArrowUp/></a > */}
                         <Navbar />
                         <Hero />
                         <About />
