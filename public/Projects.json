@@ -7,15 +7,15 @@
     "projects": [
       {
         "id": 1,
-        "type": "Password generator",
-        "name": "Strong password generator",
-        "date": "Feb 2023",
-        "logo": "https://i.ibb.co/0cLMLP2/logo.png",
-        "image": "https://i.ibb.co/PchytgG/screencapture-password-mahfuzurrahman01-vercel-app-2023-03-31-23-14-42.png",
-        "size": "banner",
-        "description": "I am developing a web application that generates a strong and unique random password every time the user clicks on the 'generate' button. The application offers three options for the length of the generated password, allowing users to select a short, medium, or long password according to their specific requirements",
-        "live": "https://password-mahfuzurrahman01.vercel.app/",
-        "gitHubClient": "https://github.com/mahfuzurrahman01/random-strong-password-generator"
+        "type": "Mob store",
+        "size": "regular",
+        "name": "A quality product seller",
+        "date": "sep 2023",
+        "logo": "https://i.ibb.co/s9Z6wHz/logo.png",
+        "image": "https://i.ibb.co/nDdqz5T/mob-store.png",
+        "description": "At the heart of our digital storefront lies an enticing landing page that encapsulates the essence of our brand. Here, you'll find a harmonious blend of elements designed to enhance your shopping experience and provide you with a glimpse into our world. (keep updating this site)",
+        "live": "https://mob-store.vercel.app/",
+        "gitHubClient": "https://github.com/mahfuzurrahman01/mob_store"
       },
       {
         "id": 2,
@@ -40,6 +40,18 @@
         "description": "Introducing Gitto Profile, a delightful project I crafted using Next.js, TypeScript, and Tailwind CSS! 🚀</br> With Gitto Profile, users can effortlessly generate personalized GitHub profile cards by simply entering their GitHub username. This nifty tool then fetches and displays essential information from their GitHub profile in a visually appealing and concise format.",
         "live": "https://gitto-profile.vercel.app/",
         "gitHubClient": "https://github.com/mahfuzurrahman01/gitto-profile"
+      },
+      {
+        "id": 4,
+        "type": "Password generator",
+        "name": "Strong password generator",
+        "date": "Feb 2023",
+        "logo": "https://i.ibb.co/0cLMLP2/logo.png",
+        "image": "https://i.ibb.co/PchytgG/screencapture-password-mahfuzurrahman01-vercel-app-2023-03-31-23-14-42.png",
+        "size": "banner",
+        "description": "I am developing a web application that generates a strong and unique random password every time the user clicks on the 'generate' button. The application offers three options for the length of the generated password, allowing users to select a short, medium, or long password according to their specific requirements",
+        "live": "https://password-mahfuzurrahman01.vercel.app/",
+        "gitHubClient": "https://github.com/mahfuzurrahman01/random-strong-password-generator"
       }
     ]
   },
